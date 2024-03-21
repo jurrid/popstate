@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create</title>
+  </head>
+  <body>
+    <h1>Create</h1>
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+    </form>
+    <script>
+      window.addEventListener("load", (e) => {
+        window.history.pushState({}, null, null);
+      });
+
+      window.addEventListener("popstate", (e) => {
+        if (!confirm("Do you really want to leave?")) {
+          e.preventDefault();
+          window.history.pushState({}, null, null);
+        } else {
+          history.back();
+        }
+      });
+    </script>
+  </body>
+</html>
