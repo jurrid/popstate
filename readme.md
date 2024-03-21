@@ -1,0 +1,1 @@
+[https://github.com/inertiajs/inertia/issues/1830#issuecomment-2011713268](https://github.com/inertiajs/inertia/issues/1830#issuecomment-2011713268)
